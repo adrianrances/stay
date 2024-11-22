@@ -1,0 +1,139 @@
+:root {
+  --darkSlateGrey: hsl(234, 29%, 20%);
+  --charcoalGrey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --tomato: hsl(4, 100%, 67%);
+  --tomatoDark: hsl(347, 100%, 66.45%);
+  --tomatoLight: hsl(4.92, 100%, 95.1%);
+  --tomatoVeryDark: hsl(2.84, 55%, 61.55%);
+  --greyLight: hsl(0, 0%, 78.4%);
+  --black: hsl(0, 0%, 0%);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--darkSlateGrey);
+  font-family: "Roboto", sans-serif;
+}
+.registerContainer {
+  background-color: var(--white);
+  border-radius: 5%;
+  padding: 1em 1em 1em 2em;
+  flex-direction: row;
+  display: flex;
+  gap: 1em;
+}
+.ilustration {
+  height: 40em;
+  width: 100%;
+  right: 3%;
+}
+.recommendation {
+  color: var(--darkSlateGrey);
+  font-size: 3.5em;
+  margin: 0em 0em 0.5em 0em;
+}
+.textContainer {
+  padding: 4em 1em;
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.listBox {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5em 0em;
+}
+.textList {
+  padding-left: 1em;
+}
+p {
+  margin: 0;
+}
+label {
+  display: block;
+  margin: 1em 0em;
+  font-size: 0.82em;
+}
+.emailInput {
+  width: 100%;
+  padding: 1.119em;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--black);
+  border: 2px solid var(--greyLight);
+  font-size: 0.95em;
+  font-weight: 700;
+}
+.emailButton {
+  width: 100%;
+  padding: 1.25em;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-top: 2em;
+  background-color: var(--darkSlateGrey);
+  color: var(--white);
+  border: hidden;
+  font-size: 0.95em;
+  font-weight: 700;
+}
+.emailButton:hover {
+  background: linear-gradient(to left, var(--tomato), var(--tomatoDark));
+  box-shadow: 0 10px 30px rgba(255, 98, 87, 0.5);
+}
+.emailInput.invalid {
+  color: var(--tomatoVeryDark);
+  border-color: var(--tomatoDark);
+  background-color: var(--tomatoLight);
+}
+.emailInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5em;
+}
+.hidden {
+  display: none;
+}
+.errorMessage {
+  color: var(--tomatoVeryDark);
+}
+.successPage {
+  background-color: var(--white);
+  border-radius: 2em;
+  padding: 3.7em;
+}
+.thanks {
+  margin: 0.5em 0em;
+  font-size: 3.4em;
+}
+.dismissMessage:hover {
+  background: linear-gradient(to left, var(--tomato), var(--tomatoDark));
+  box-shadow: 0 10px 30px rgba(255, 98, 87, 0.5);
+}
+.dismissMessage {
+  width: 100%;
+  padding: 1.25em;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-top: 2em;
+  background-color: var(--darkSlateGrey);
+  color: var(--white);
+  border: hidden;
+  font-size: 0.95em;
+  font-weight: 700;
+}
+.numberOfUpdate {
+  width: fit-content;
+  margin-bottom: 2em;
+}
